@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website Dealer Mobil">
+    <title>Dealer Mobil</title>
+    <!-- <link href="src/output.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/848caf1f64.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-gray-100 text-gray-200">
+    <!-- Navbar -->
+    <header class="bg-black shadow-xl p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-50 h-20">
+
+        <div class="mx-10">
+            <a href="#home" class="">
+                <h1 class="text-2xl font-bold uppercase">Mas-Dwi</h1>
+            </a>
+        </div>
+        
+        <nav class="">
+            <div class="block lg:hidden md:hidden" >
+                <button id="menu-toggle" class="flex px-3 text-end py-2 rounded text-white focus:outline-none">
+                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    </button>
+            </div>
+            <div class="md:space-x-4 mx-10 text-md text-end hidden md:block " id="navbar-menu">
+    
+            <a href="#home" class="hover:text-gray-400">Home</a>
+            <a href="#collection" class="hover:text-gray-400">Collections</a>
+            <a href="#about" class="hover:text-gray-400">About</a>
+            <a href="#contact" class="hover:text-gray-400">Contact</a>
+            </div>
+        </nav>
+        
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="pb-12" id="home">
+        <div class="carousel w-full h-auto" id="carousel">
+
+        <div id="slide1" class="carousel-item relative w-full h-full">
+            <img
+            src="assets/img/car1.jpg"
+            class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+            
+            </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full h-full">
+            <img
+            src="assets/img/car2.jpg"
+            class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full h-full">
+            <img
+            src="assets/img/car5.jpg"
+            class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full h-full">
+            <img
+            src="assets/img/car4.jpg"
+            class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Car Collection Section -->
+    <section class="py-12 px-16" id="collection">
+        <h2 class="text-3xl font-bold text-center mb-8 text-black">Koleksi Mobil Kami</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-black">
+            <div class="bg-white rounded-lg shadow p-4 ">
+                <div class="h-50 w-full overflow-hidden rounded mb-4">
+                    <img src="assets/img/car2.jpg" alt="Mobil" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold">Toyota Supra</h3>
+                <p class="text-gray-600">Rp 1.200.000.000</p>
+                <div class="text-start">
+                <button class="mt-4 mr-1 border-black border-1 bg-gray-950 text-white hover:bg-gray-800 hover:text-white transition duration-300 px-3 py-1 rounded">Buy Now</button>
+                <button class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300">More</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 ">
+                <div class="h-50 w-full overflow-hidden rounded mb-4">
+                    <img src="assets/img/car2.jpg" alt="Mobil" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold">Toyota Supra</h3>
+                <p class="text-gray-600">Rp 1.200.000.000</p>
+                <div class="text-start">
+                <button class="mt-4 mr-1 border-black border-1 bg-gray-950 text-white hover:bg-gray-800 hover:text-white transition duration-300 px-3 py-1 rounded">Buy Now</button>
+                <button class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300">More</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 ">
+                <div class="h-50 w-full overflow-hidden rounded mb-4">
+                    <img src="assets/img/car2.jpg" alt="Mobil" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold">Toyota Supra</h3>
+                <p class="text-gray-600">Rp 1.200.000.000</p>
+                <div class="text-start">
+                <button class="mt-4 mr-1 border-black border-1 bg-gray-950 text-white hover:bg-gray-800 hover:text-white transition duration-300 px-3 py-1 rounded">Buy Now</button>
+                <button class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300">More</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 ">
+                <div class="h-50 w-full overflow-hidden rounded mb-4">
+                    <img src="assets/img/car2.jpg" alt="Mobil" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold">Toyota Supra</h3>
+                <p class="text-gray-600">Rp 1.200.000.000</p>
+               <div class="text-start">
+                <button class="mt-4 mr-1 border-black border-1 bg-gray-950 text-white hover:bg-gray-800 hover:text-white transition duration-300 px-3 py-1 rounded">Buy Now</button>
+                <button class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300">More</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 ">
+                <div class="h-50 w-full overflow-hidden rounded mb-4">
+                    <img src="assets/img/car2.jpg" alt="Mobil" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold">Toyota Supra</h3>
+                <p class="text-gray-600">Rp 1.200.000.000</p>
+                <div class="text-start">
+                <button class="mt-4 mr-1 border-black border-1 bg-gray-950 text-white hover:bg-gray-800 hover:text-white transition duration-300 px-3 py-1 rounded">Buy Now</button>
+                <button class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300">More</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 ">
+                <div class="h-50 w-full overflow-hidden rounded mb-4">
+                    <img src="assets/img/car2.jpg" alt="Mobil" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold">Toyota Supra</h3>
+                <p class="text-gray-600">Rp 1.200.000.000</p>
+                <div class="text-start">
+                <button class="mt-4 mr-1 border-black border-1 bg-gray-950 text-white hover:bg-gray-800 hover:text-white transition duration-300 px-3 py-1 rounded">Buy Now</button>
+                <button class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300">More</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 ">
+                <div class="h-50 w-full overflow-hidden rounded mb-4">
+                    <img src="assets/img/car2.jpg" alt="Mobil" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold">Toyota Supra</h3>
+                <p class="text-gray-600">Rp 1.200.000.000</p>
+                <div class="text-start">
+                <button class="mt-4 mr-1 border-black border-1 bg-gray-950 text-white hover:bg-gray-800 hover:text-white transition duration-300 px-3 py-1 rounded">Buy Now</button>
+                <button class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300">More</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 ">
+                <div class="h-50 w-full overflow-hidden rounded mb-4">
+                    <img src="assets/img/car2.jpg" alt="Mobil" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold">Toyota Supra</h3>
+                <p class="text-gray-600">Rp 1.200.000.000</p>
+                <div class="text-start">
+                <button class="mt-4 mr-1 border-black border-1 bg-gray-950 text-white hover:bg-gray-800 hover:text-white transition duration-300 px-3 py-1 rounded">Buy Now</button>
+                <button class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300">More</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 ">
+                <div class="h-50 w-full overflow-hidden rounded mb-4">
+                    <img src="assets/img/car2.jpg" alt="Mobil" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold">Toyota Supra</h3>
+                <p class="text-gray-600">Rp 1.200.000.000</p>
+                <div class="text-start">
+                <button class="mt-4 mr-1 border-black border-1 bg-gray-950 text-white hover:bg-gray-800 hover:text-white transition duration-300 px-3 py-1 rounded">Buy Now</button>
+                <button class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300">More</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 ">
+                <div class="h-50 w-full overflow-hidden rounded mb-4">
+                    <img src="assets/img/car2.jpg" alt="Mobil" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold">Toyota Supra</h3>
+                <p class="text-gray-600">Rp 1.200.000.000</p>
+               <div class="text-start">
+                <button class="mt-4 mr-1 border-black border-1 bg-gray-950 text-white hover:bg-gray-800 hover:text-white transition duration-300 px-3 py-1 rounded">Buy Now</button>
+                <button class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300">More</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 ">
+                <div class="h-50 w-full overflow-hidden rounded mb-4">
+                    <img src="assets/img/car2.jpg" alt="Mobil" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold">Toyota Supra</h3>
+                <p class="text-gray-600">Rp 1.200.000.000</p>
+                <div class="text-start">
+                <button class="mt-4 mr-1 border-black border-1 bg-gray-950 text-white hover:bg-gray-800 hover:text-white transition duration-300 px-3 py-1 rounded">Buy Now</button>
+                <button class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300">More</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4 ">
+                <div class="h-50 w-full overflow-hidden rounded mb-4">
+                    <img src="assets/img/car2.jpg" alt="Mobil" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-semibold">Toyota Supra</h3>
+                <p class="text-gray-600">Rp 1.200.000.000</p>
+                <div class="text-start">
+                <button class="mt-4 mr-1 border-black border-1 bg-gray-950 text-white hover:bg-gray-800 hover:text-white transition duration-300 px-3 py-1 rounded">Buy Now</button>
+                <button class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300">More</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="py-12" id="about">
+        <div class="bg-black w-full flex flex-wrap text-white text-center justify-center items-center">
+            <div class="">
+                <h2 class="text-3xl font-bold pt-8 pb-6">Kenapa Kami?</h2>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8 mb-10 px-10 text-black">
+                <div class="bg-white rounded-lg shadow pt-16 px-10 pb-8 border-black border-2 hover:bg-black hover:text-white hover:border-white hover:border-2 transition duration-300">
+                    <i class="fas fa-4x fa-tools pb-16"></i>
+                    <h3 class="text-xl font-bold mb-5">Kualitas Mobil yang Terjamin</h3>
+                    <p class=" text-md font-normal pb-6 font-sans">Kami hanya menawarkan mobil-mobil pilihan, baik baru maupun bekas, yang telah melewati proses inspeksi menyeluruh oleh tim profesional. Setiap unit dijamin dalam kondisi prima, siap langsung digunakan tanpa khawatir. Karena bagi kami, keamanan dan kenyamanan Anda adalah prioritas utama.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow pt-16 px-10 pb-8 border-black border-2 hover:bg-black hover:text-white hover:border-white hover:border-2 transition duration-300">
+                    <i class="fas fa-4x fa-hand-holding-usd pb-16"></i>
+                    <h3 class="text-xl font-bold mb-5">Harga Terjangkau, Pembiayaan Fleksibel</h3>
+                    <p class=" text-md font-normal pb-6 font-sans">Kami percaya bahwa memiliki mobil impian tidak harus mahal. Dengan harga bersaing dan berbagai pilihan pembiayaan, termasuk cicilan ringan dan DP rendah, proses pembelian jadi lebih mudah dan sesuai dengan kemampuan Anda. Proses kredit pun cepat, transparan, dan tanpa ribet.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow pt-16 px-10 pb-8 border-black border-2 hover:bg-black hover:text-white hover:border-white hover:border-2 transition duration-300">
+                    <i class="fas fa-4x fa-handshake pb-16"></i>
+                    <h3 class="text-xl font-bold mb-5">Pelayanan Ramah dan Profesional</h3>
+                    <p class=" text-md font-normal pb-6 font-sans">Tim kami siap membantu Anda dari awal hingga akhir proses pembelian. Mulai dari konsultasi pemilihan mobil, simulasi cicilan, hingga pengurusan dokumen—semua dilakukan dengan sepenuh hati dan pelayanan terbaik. Karena kepuasan Anda adalah kebanggaan kami.</p>
+                </div>
+
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="py-12" id="contact">
+        <div class="bg-black w-full py-1 justify-between text-white">
+            <div class="grid lg:grid-cols-3 mb-10 px-10 my-10">
+                <div class="bg-transparent text-start mr-18 pr-5">
+                    <h3 class="text-xl font-bold mb-5">Maswi Dealer Mobil</h3>
+                    <p>Jl. Banjaran 13 No.23, Antapani Kidul, </p><p
+                    class=" text-md font-normal pb-6 font-sans">Kec. Banjaran, Kota Bandung, Jawa Barat 40283</p>
+                    <p>Jl. Danau Bogor Raya No.15 Blok I3, RT.05/RW.07, Cimahpar, Kec. Bogor Utara, Kota Bogor, Jawa Barat 16144</p>
+                </div>
+                <div class="bg-transparent text-start">
+                    <h3 class="text-xl font-bold mb-5 lg:mt-0 md:mt-10">Showroom</h3>
+                    <p class="font-sans">Senin - Jumat, 08.00 - 17.00</p>
+                    <p class=" text-md font-normal pb-6 font-sans">Sabtu - Minggu, 09.00 - 15.00</p>
+                    <h3 class="text-xl font-bold mb-5">Roadside Assitance 22/7</h3>
+                    <p class=" text-md font-normal font-sans">089-1234-5678</p>
+                    <p class=" text-md font-normal pb-6 font-sans">089-1234-5678</p>
+                </div>
+                <div class="md:text-end sm:text-start">
+                    <h3 class="text-xl font-bold mb-8">Social Media</h3>
+                    <div class="space-x-3">
+                        <i class="fab fa-2x fa-instagram"></i>
+                        <i class="fab fa-2x fa-facebook"></i>
+                        <i class="fab fa-2x fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1A1A1A] text-white text-center p-4">
+        <p>&copy; 2025 Maswi Dealer Mobil. All rights reserved.</p>
+    </footer>
+    <script>
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+        const menu = document.getElementById("navbar-menu");
+        menu.classList.toggle("hidden");
+    });
+    
+</script>
+</body>
+</html>
