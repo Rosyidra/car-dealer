@@ -22,45 +22,65 @@
     <header
       class="bg-black shadow-xl p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-50 h-10 md:h-20"
     >
+      <!-- Logo -->
       <div class="mx-10">
-        <a href="#home" class="">
-          <h1 class="text-sm md:text-2xl font-bold uppercase">Mas-Dwi</h1>
+        <a href="#home">
+          <h1 class="text-sm md:text-2xl font-bold uppercase text-white">
+            Mas-Dwi
+          </h1>
         </a>
       </div>
 
-      <nav class="">
-        <div class="block lg:hidden md:hidden">
-          <button
-            id="menu-toggle"
-            class="flex px-3 text-end py-2 rounded text-white focus:outline-none"
-          >
+      <!-- Navigation -->
+      <nav class="mx-10">
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6 text-white text-sm md:text-base">
+          <a href="#home" class="hover:text-gray-400">Home</a>
+          <a href="#collection" class="hover:text-gray-400">Collections</a>
+          <a href="#about" class="hover:text-gray-400">About</a>
+          <a href="#contact" class="hover:text-gray-400">Contact</a>
+        </div>
+
+        <!-- Mobile Burger Button -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
             <svg
               class="h-6 w-6"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M4 6h16M4 12h16M4 18h16"
-              ></path>
+              />
             </svg>
           </button>
         </div>
-        <div
-          class="md:space-x-4 mx-10 text-md text-end hidden md:block"
-          id="navbar-menu"
-        >
-          <a href="#home" class="hover:text-gray-400">Home</a>
-          <a href="#collection" class="hover:text-gray-400">Collections</a>
-          <a href="#about" class="hover:text-gray-400">About</a>
-          <a href="#contact" class="hover:text-gray-400">Contact</a>
-        </div>
       </nav>
     </header>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="hidden flex flex-col space-y-4 p-4 bg-black text-white fixed top-10 w-full z-40 md:hidden"
+    >
+      <a href="#home" class="hover:text-gray-400">Home</a>
+      <a href="#collection" class="hover:text-gray-400">Collections</a>
+      <a href="#about" class="hover:text-gray-400">About</a>
+      <a href="#contact" class="hover:text-gray-400">Contact</a>
+    </div>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      toggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
 
     <!-- Hero Section -->
 
@@ -106,11 +126,11 @@
     </section>
 
     <!-- Car Collection Section -->
-    <section class="py-12 px-16" id="collection">
+    <section class="py-12 px-7 md:px-12" id="collection">
       <h2 class="text-xl md:text-3xl font-bold text-center mb-8 text-black">
         Koleksi Mobil Kami
       </h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-black">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 text-black">
         <div class="bg-white rounded-lg shadow p-4">
           <div class="h-50 w-full overflow-hidden rounded mb-4">
             <img
@@ -128,7 +148,7 @@
               Buy Now
             </button>
             <button
-              class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
+              class="mt-2 md:mt-0 border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
             >
               More
             </button>
@@ -151,7 +171,7 @@
               Buy Now
             </button>
             <button
-              class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
+              class="mt-2 md:mt-0 border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
             >
               More
             </button>
@@ -174,7 +194,7 @@
               Buy Now
             </button>
             <button
-              class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
+              class="mt-2 md:mt-0 border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
             >
               More
             </button>
@@ -197,7 +217,7 @@
               Buy Now
             </button>
             <button
-              class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
+              class="mt-2 md:mt-0 border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
             >
               More
             </button>
@@ -220,7 +240,7 @@
               Buy Now
             </button>
             <button
-              class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
+              class="mt-2 md:mt-0 border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
             >
               More
             </button>
@@ -243,7 +263,7 @@
               Buy Now
             </button>
             <button
-              class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
+              class="mt-2 md:mt-0 border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
             >
               More
             </button>
@@ -266,7 +286,7 @@
               Buy Now
             </button>
             <button
-              class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
+              class="mt-2 md:mt-0 border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
             >
               More
             </button>
@@ -289,7 +309,7 @@
               Buy Now
             </button>
             <button
-              class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
+              class="mt-2 md:mt-0 border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
             >
               More
             </button>
@@ -312,7 +332,7 @@
               Buy Now
             </button>
             <button
-              class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
+              class="mt-2 md:mt-0 border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
             >
               More
             </button>
@@ -335,7 +355,7 @@
               Buy Now
             </button>
             <button
-              class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
+              class="mt-2 md:mt-0 border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
             >
               More
             </button>
@@ -358,7 +378,7 @@
               Buy Now
             </button>
             <button
-              class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
+              class="mt-2 md:mt-0 border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
             >
               More
             </button>
@@ -376,12 +396,12 @@
           <p class="text-gray-600">Rp 1.200.000.000</p>
           <div class="text-start">
             <button
-              class="mt-4 mr-1 border-black border-1 bg-gray-950 text-white hover:bg-gray-800 hover:text-white transition duration-300 px-3 py-1 rounded"
+              class="mt-2 md:mt-0 mt-4 mr-1 border-black border-1 bg-gray-950 text-white hover:bg-gray-800 hover:text-white transition duration-300 px-3 py-1 rounded"
             >
               Buy Now
             </button>
             <button
-              class="border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
+              class="mt-2 md:mt-0 border-1 border-black bg-white text-black px-3 py-1 rounded transition duration-300"
             >
               More
             </button>
@@ -398,7 +418,7 @@
         <div class="">
           <h2 class="text-3xl font-bold pt-8 pb-6">Kenapa Kami?</h2>
         </div>
-        <div class="grid lg:grid-cols-3 gap-8 mb-10 px-10 text-black">
+        <div class="grid lg:grid-cols-3 gap-4 md:gap-8 mb-10 px-10 text-black">
           <div
             class="bg-white rounded-lg shadow pt-16 px-10 pb-8 border-black border-2 hover:bg-black hover:text-white hover:border-white hover:border-2 transition duration-300"
           >
@@ -461,7 +481,9 @@
             </p>
           </div>
           <div class="bg-transparent text-start">
-            <h3 class="text-xl font-bold mb-5 lg:mt-0 md:mt-10">Showroom</h3>
+            <h3 class="text-xl font-bold mb-5 mt-8 lg:mt-0 md:mt-8">
+              Showroom
+            </h3>
             <p class="font-sans">Senin - Jumat, 08.00 - 17.00</p>
             <p class="text-md font-normal pb-6 font-sans">
               Sabtu - Minggu, 09.00 - 15.00
